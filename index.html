@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Porfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+    <link rel="icon" href="./minilogo.png">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Jesse Miranda</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Jesse Miranda</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section_pic-container">
+            <img src="./p1.png" alt="Jesse profile picture">
+        </div>
+        <div class="section_text">
+            <p class="section_text_p1">Hello, I'm</p>
+            <h1 class="title">Jesse Miranda</h1>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./mycv.png')"><a href="./mycv.png" download class="download-btn">Download CV<i class="fa fa-download"></i></a></button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button>
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <p class="section_text_p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section_pic-container">
+                <img src="./p2.png" alt="Profile picture" class="about-pic"/>
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="./experience.png" alt="Experience icon" class="icon"/>
+                        <h3>Experience</h3>
+                        <p>2 months <br> Frontend Development</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="./education.png" alt="Education icon" class="icon"/>
+                        <h3>Education</h3>
+                        <p>Bachelor of Science in Computer Engineering</p>
+                        <p>National College of Science and Technology</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>I'm Jesse Rae Miranda, a Computer Engineering student who enjoys embarking on a tough journey in coding at NCST where I could apply my talents and creativity to design and establish user-friendly websites.</p>
+                </div>
+            </div>
+        </div>
+        <img src="arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'"/>
+    </section>
+    <section id="experience">
+        <p class="section_text_p1">Explore My</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Frontend & Backend Development</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./checkmark.png" alt="Experience icon" class="icon"/>
+                            <div>
+                                <h3>HTML</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./checkmark.png" alt="Experience icon" class="icon"/>
+                            <div>
+                                <h3>CSS</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article><article>
+                            <img src="./checkmark.png" alt="Experience icon" class="icon"/>
+                            <div>
+                                <h3>JavaScript</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+          <!-- skills -->
+                       <div id="skills">
+                     <br><h1>My <span>Skills</span></h1></div>
+                      <section>
+                        <div class="container1">
+                            <h1 class="heading1">Professional Skills</h1>
+                            <div class="radial-bars">
+                                <div class="radial-bar">
+                                    <svg x="0px" y="0px" viewBox="0 0 200 200">
+                                        <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                                    <circle class="path path-1" cx="100" cy="100" r="80"></circle>
+                                    </svg>
+                                    <div class="percentage">85%</div>
+                                    <div class="text">Creativity</div>
+                                </div>
+                                <div class="radial-bar">
+                                    <svg x="0px" y="0px" viewBox="0 0 200 200">
+                                        <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                                    <circle class="path path-2" cx="100" cy="100" r="80"></circle>
+                                    </svg>
+                                    <div class="percentage">88%</div>
+                                    <div class="text">Communication</div>
+                                </div>
+                                <div class="radial-bar">
+                                    <svg x="0px" y="0px" viewBox="0 0 200 200">
+                                        <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                                    <circle class="path path-3" cx="100" cy="100" r="80"></circle>
+                                    </svg>
+                                    <div class="percentage">80%</div>
+                                    <div class="text">Teamwork</div>
+                                </div>
+                                <div class="radial-bar">
+                                    <svg x="0px" y="0px" viewBox="0 0 200 200">
+                                        <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                                    <circle class="path path-4" cx="100" cy="100" r="80"></circle>
+                                    </svg>
+                                    <div class="percentage">78%</div>
+                                    <div class="text">Problem Solving</div>
+                                </div>
+                            </div>
+                    <!-- tech skills -->
+                        <div class="container1">
+                            <h1 class="heading1">Technical Skills</h1>
+                            <div class="radial-bars">
+                                <div class="radial-bar">
+                                    <svg x="0px" y="0px" viewBox="0 0 200 200">
+                                        <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                                    <circle class="path path-5" cx="100" cy="100" r="80"></circle>
+                                    </svg>
+                                    <div class="percentage">54%</div>
+                                    <div class="text">HTML</div>
+                                </div>
+                                <div class="radial-bar">
+                                    <svg x="0px" y="0px" viewBox="0 0 200 200">
+                                        <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                                    <circle class="path path-6" cx="100" cy="100" r="80"></circle>
+                                    </svg>
+                                    <div class="percentage">51%</div>
+                                    <div class="text">CSS</div>
+                                </div>
+                                <div class="radial-bar">
+                                    <svg x="0px" y="0px" viewBox="0 0 200 200">
+                                        <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                                    <circle class="path path-7" cx="100" cy="100" r="80"></circle>
+                                    </svg>
+                                    <div class="percentage">5%</div>
+                                    <div class="text">JavaScript</div>
+                                </div>    
+                            </div>
+                        </div>                           
+                    </section>
+        <img src="./arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'">
+    </section>
+    <section id="projects">
+        <p class="section_text_p1">Browse My Recent</p>
+        <h1 class="title">Projects & Services</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./firstweb.png" alt="Project 1" class="project-img"/>
+                    </div>
+                    <h2 class="experience-sub-title project-title">Project One</h2> 
+                    <h3 class="serve">Web Design</h3>
+                    <p class="serve">I'll deliver a stunning and modernly aesthetic website for your business.</p>
+                    <br>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">Github</button>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./secondweb.png" alt="Project 2" class="project-img"/>
+                    </div>
+                    <h2 class="experience-sub-title project-title">Project Two</h2>
+                    <h3 class="serve">Web Development</h3>
+                    <p class="serve">Highly performant? Let's create a responsive website for your business.</p>
+                    <br>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">Github</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'">
+    </section>
+    <section id="contact">
+        <p class="section_text_p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./email.png" alt="Email icon" class=" contact-icon email-icon">
+                <p><a href="mailto:jesserae1218@gmail.com">jesserae1218@gmail.com</a></p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li> 
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; Jesse Miranda BSCOE 12A1. All Rights Reserved </p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
